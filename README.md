@@ -1,5 +1,5 @@
 # CUCM-BILLING
-Get and process Cisco CUCM cdrs with simple tools
+Get and process Cisco CUCM cdrs with simple tools ( shell script, php, mysql )
 
 # Requirements
 
