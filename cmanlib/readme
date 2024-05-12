@@ -1,0 +1,8 @@
+Log into the Cisco Unified CM Administration application
+Go to Application --> Plugins
+Click on the Download link by the Cisco CallManager AXL SQL Toolkit Plugin
+extract the Zip file and upload
+AXLAPI.wsdl
+AXLEnums.xsd
+AXLSoap.xsd
+in this directory.
