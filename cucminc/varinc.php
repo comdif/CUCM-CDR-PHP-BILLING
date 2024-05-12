@@ -2,6 +2,7 @@
 $dbhost = "127.0.0.1";
 $dbport = "3306";
 $dbname = "calldata";
+// change for your custom informations
 $dbuser = "your-mysql-login-here";
 $dbpwd = "your-mysql-password-here";
 //AXL VAR
