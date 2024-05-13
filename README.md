@@ -12,7 +12,7 @@ apt install php libapache2-mod-php php-mysql php-soap php-xml
 # Instructions:
 install all files in /var/www/html ( or customise if needed ), create a cron in /var/spool/root with content:
 
-@hourly root /var/www/html/CDRS/batch.sh
+1 0 * * * /var/www/html/CDRS/batch.sh
 
 - Log into the Cisco Unified CM Administration application Go to Application --> Plugins
 
