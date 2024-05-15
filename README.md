@@ -9,6 +9,8 @@ Required packages:
 
 apt install php libapache2-mod-php php-mysql php-soap php-xml
 
+or php7.x-soap or php8.x-soap depending your php version
+
 # Instructions:
 install all files in /var/www/html ( or customise if needed ), create a cron in /var/spool/root with content:
 
