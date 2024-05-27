@@ -27,7 +27,7 @@ echo'<center><table class="blueTable">
 		<a href="index.php">Cdrs</a>
 		</th>
 		<th>
-		<a href="impusers.php">Import/Update Users</a>
+		<a href="impusers.php">Phones-Users</a>
 		</th>
 		<th>
  

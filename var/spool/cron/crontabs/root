@@ -1,0 +1,1 @@
+* * * * * chmod 755 /var/www/html/cucmlog/CDRS/batch.sh && cd /var/www/html/cucmlog/CDRS && /var/www/html/cucmlog/CDRS/batch.sh #Cisco CDRS
