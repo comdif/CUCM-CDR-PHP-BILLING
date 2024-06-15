@@ -1,4 +1,6 @@
 <?php
+###############  Comdif Innovation CUCM Billing software  ###############
+###########################  @Christian Zeler ###########################
 echo'<head>
 <style>
 table.blueTable { border: 5px double #1C6EA4;  background-color: #EEEEEE; width: 80%; height: px;
@@ -16,39 +18,41 @@ background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
 table.blueTable tfoot td { font-size: 14px; }
 table.blueTable tfoot .links { ext-align: right; }
 table.blueTable tfoot .links a { display: inline-block; background: #1C6EA4; }
-select { appearance: none; background-color: #E8E8E8; border: 1px solid; border-radius: 8px; padding: 2 2 2 0; margin: 0;  }
+select { appearance: none; background-color: #E8E8E8; border: 1px solid; border-radius: 8px; padding: 2 8 2 8; margin: 0; background: #bbd0f2; }
+input[type="date"] { background: #bbd0f2; border-radius: 8px; padding: 2 8 2 8;}
+.link_bt:link, .link_bt:visited {-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;background-color: #a5b9d9;color: black;border: 2px solid #1C6EA4;padding: 5px 20px;
+text-align: center;text-decoration: none;display: inline-block;}
+.link_bt:hover, .link_bt:active { background-color: #051733; color: white; }
+
 </style>
 </head>';
-
-echo'<center><table class="blueTable">
-<thead>
+//if( isset($_SERVER['HTTP_SEC_FETCH_DEST']) && $_SERVER['HTTP_SEC_FETCH_DEST'] == 'iframe' )
+if( 1 == 1 )
+	{
+	echo'<center><table class="blueTable">
+	<thead>
 	<tr>
-		<th>
-		<a href="index.php">Cdrs</a>
-		</th>
-		<th>
-		<a href="impusers.php">Phones-Users</a>
-		</th>
-		<th>
- 
-		</th>
-		<th>
+		<th colspan="5" style="border: 0px">
+		<a href="index.php" class="link_bt">Cdrs</a> 
+		<a href="impusers.php" class="link_bt">Phones-Users</a> 
+ 		<a href="bill.php" class="link_bt">Billing</a> 
+		<a href="imprates.php" class="link_bt">Rates</a> 
+		<a href="conf.php" class="link_bt">Configuration</a>
+		
+		<a href="print.php" class="link_bt">One Week Billing</a>
 
 		</th>
-		<th>
-
-		</th>
-		<th>
-
-		</th>
-		<th>
- 
-		</th>
-		<th>
-
+		<th style="border: 0px" align="center">
+ 		<img src="ico\ekium.svg" alt="" border=0 height=30 width=130>
 		</th>
 
 	</tr>
-</thead>
-</table></center>';
+	</thead>
+	</table></center>';
+	}
+else
+	{
+	echo'<center>To use this application, please login to <a href="https://'.$_SERVER['SERVER_NAME'].'">https://'.$_SERVER['SERVER_NAME'].'</a> and use the Cisco-CDR tab (billuser/billuser) or any admin login</center>';
+	exit(0);
+	}
 ?>
