@@ -1,5 +1,0 @@
-Just to store one week or more originals CISCO CDR files
-you can change this value in the batch.sh file
-the var is set to older than 2 days
-purgetime="+2"
-change it if needed
