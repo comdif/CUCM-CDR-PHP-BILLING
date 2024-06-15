@@ -146,6 +146,21 @@ CREATE TABLE `enduser` (
   PRIMARY KEY (`userid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE `billing` (
+  `dateTimeConnect` varchar(30) DEFAULT '',
+  `CallingPartyNumber` varchar(30) DEFAULT '',
+  `dateTimeDisconnect` varchar(50) DEFAULT '',
+  `originalCalledPartyNumberPartition` varchar(30) DEFAULT '',
+  `origDeviceName` varchar(50) DEFAULT '',
+  `destDeviceName` varchar(50) DEFAULT '',
+  `originalCalledPartyNumber` varchar(50) DEFAULT '',
+  `duration` varchar(50) DEFAULT '',
+  `pkid` varchar(100) NOT NULL,
+  `dest` varchar(50) DEFAULT '',
+  `cost` varchar(11) DEFAULT '',
+  PRIMARY KEY (`pkid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 CREATE TABLE `routes` (
   `pattern` varchar(40) NOT NULL DEFAULT '',
   `comment` varchar(80) DEFAULT NULL,
