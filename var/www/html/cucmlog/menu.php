@@ -38,9 +38,6 @@ if( 1 == 1 )
  		<a href="bill.php" class="link_bt">Billing</a> 
 		<a href="imprates.php" class="link_bt">Rates</a> 
 		<a href="conf.php" class="link_bt">Configuration</a>
-		
-		<a href="print.php" class="link_bt">One Week Billing</a>
-
 		</th>
 		<th style="border: 0px" align="center">
  		<img src="ico\ekium.svg" alt="" border=0 height=30 width=130>
