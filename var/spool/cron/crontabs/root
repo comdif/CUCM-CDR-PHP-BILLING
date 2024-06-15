@@ -1,1 +1,2 @@
 * * * * * chmod 755 /var/www/html/cucmlog/CDRS/batch.sh && cd /var/www/html/cucmlog/CDRS && /var/www/html/cucmlog/CDRS/batch.sh #Cisco CDRS
+0 4 * * 0 cd /var/www/html/cucmlog/ && /usr/bin/php /var/www/html/cucmlog/cron.php
