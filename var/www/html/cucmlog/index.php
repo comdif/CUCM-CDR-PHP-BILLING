@@ -1,4 +1,6 @@
 <?php
+###############  Comdif Innovation CUCM Billing software  ###############
+###########################  @Christian Zeler ###########################
 /////////////////////INCLUDE/////////////////////
 include 'cucminc/varinc.php';
 include 'cucminc/connectdb.php';
@@ -53,7 +55,7 @@ include 'menu.php';
 		<th colspan="2">
 			<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
 			<select name="dati"onchange='this.form.submit()'>
-			<option value="">- Speed Select -</option>
+			<option value="">Quick period selection</option>
 			<option value="1">Since Last 24 Hours</option>
 			<option value="2">Since Last week</option>
 			<option value="3">Since Last month</option>
