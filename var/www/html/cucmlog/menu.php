@@ -1,4 +1,4 @@
-<?php
+ho<?php
 ###############  Comdif Innovation CUCM Billing software  ###############
 ###########################  @Christian Zeler ###########################
 echo'<head>
@@ -39,9 +39,9 @@ if( 1 == 1 )
 		<a href="imprates.php" class="link_bt">Rates</a> 
 		<a href="conf.php" class="link_bt">Configuration</a>
 		</th>
-		<th style="border: 0px" align="center">
- 		<img src="ico\ekium.svg" alt="" border=0 height=30 width=130>
-		</th>
+		<th style="border: 0px" align="center">';
+ 		//echo'<img src="ico\ekium.svg" alt="" border=0 height=30 width=130>';
+		echo'</th>
 
 	</tr>
 	</thead>
