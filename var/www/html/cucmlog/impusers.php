@@ -1,10 +1,18 @@
 <?php
+###############  Comdif Innovation CUCM Billing software  ###############
+###########################  @Christian Zeler ###########################
 include 'cucminc/varinc.php';
 include 'cucminc/connect.php';
 include 'cucminc/connectdb.php';
 include 'menu.php';
+$count = mysqli_query($conn,"SELECT count(*) as cnt FROM enduser"); $totalusers=mysqli_fetch_assoc($count);
 echo'<center><table class="blueTable">';
-echo '<tr><td colspan="3" ><center><a href="'.$_SERVER['PHP_SELF'].'?update=yes">Update Phone List</a></center></td></tr>';
+echo"<tr>";
+
+echo"<td colspan='1'>TOTAL USERS: <font size='3'>".$totalusers['cnt']."</font></center></td>";
+echo '<td colspan="2" ><center><a href="'.$_SERVER['PHP_SELF'].'?update=yes">Update Phone List</a></td>';
+
+echo"</tr>";
 if (isset($_GET['update']))
 	{
 	$returnedTags = array("firstName"=>"","lastName"=>"","userid"=>"");
@@ -48,4 +56,5 @@ else
 		}
 	}
 echo "</table></center>";
+mysqli_close($conn);
 ?>
