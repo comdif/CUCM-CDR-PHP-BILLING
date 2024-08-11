@@ -1,7 +1,7 @@
 <?php
 ob_start();
-//$cabineID = $_GET['cabineID']; $startDate = $_GET['startDate']; $endDate = $_GET['endDate']; $sipnummer = $_GET['cabineID'];
-//$Mo = date("Y-m",$startDate);
+//This page need html2pdf library version 4.01
+//Not provided
 include(dirname(__FILE__).'/pdfbill.php');
 $content = ob_get_clean();
 require_once(dirname(__FILE__).'/html2pdf/html2pdf.class.php');
