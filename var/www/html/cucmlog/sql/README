@@ -3,3 +3,5 @@ The "billing" table contain filtered datas with only call to bill
 The "routes" table contain a list of destinations, prefix and cost
 The "enduser" table is auto updated from the CUCM.
 After db creation Visit the configuration page to setup all Var.
+
+The file rates.csv is a sample of complete file to import.
