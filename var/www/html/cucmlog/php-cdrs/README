@@ -1,0 +1,2 @@
+This file is not in use, it is just a php cron example to populate the Cisco CDRS database table if you whant to build this application in full php
+without using the shell batch script.
