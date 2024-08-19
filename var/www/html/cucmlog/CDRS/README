@@ -1,0 +1,1 @@
+This is the batch executed by the cron, check if there is new cdrs files, if yes polpulate the "calldetails" mysql table and finaly delete the cdr file. 
